@@ -1,0 +1,23 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: workforce_analytics_pg
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${PG_DB:-workforce_dw}
+      POSTGRES_USER: ${PG_USER:-analytics_user}
+      POSTGRES_PASSWORD: ${PG_PASSWORD:?Set PG_PASSWORD in .env before starting Postgres}
+    ports:
+      - "${PG_PORT:-5432}:5432"
+    volumes:
+      - pg_workforce_data:/var/lib/postgresql/data
+      - ./sql/warehouse/01_ddl_postgres.sql:/docker-entrypoint-initdb.d/01_ddl_postgres.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${PG_USER:-analytics_user} -d ${PG_DB:-workforce_dw}"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  pg_workforce_data:
+

@@ -1,0 +1,48 @@
+# Environment & secrets
+.env
+.env.*
+!.env.example
+
+# Python & tooling caches
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+build/
+dist/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Logs & temporary files
+*.log
+*.tmp
+*.bak
+
+# Generated data & local SQLite database (~40 MB total; reproducible via scripts/run_phase1.py)
+data/raw/*.csv
+data/raw/*.xlsx
+data/quarantine/*.csv
+data/processed/*.parquet
+data/processed/*.csv
+data/processed/warehouse/*.csv
+data/processed/warehouse/*.parquet
+data/warehouse/*.db
+data/warehouse/*.sqlite
+
+# Runtime JSON & SQL CSV caches (Markdown reports, PNG figures & 350 KB champion ML artifacts stay tracked)
+reports/*.json
+reports/sql_results/*.csv
+
+# OS & IDE files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

@@ -1,0 +1,27 @@
+# Workforce & Compensation Analytics Engine Dependencies
+# Requires Python >= 3.11 (tested on Windows / Python 3.13.1)
+
+# Core Data, ETL & Warehouse Storage
+numpy>=2.0.0
+pandas>=2.2.0
+pyarrow>=18.0.0
+joblib>=1.4.0
+
+# Statistical Analysis & Static Figures
+matplotlib>=3.9.0
+scipy>=1.14.0
+
+# Machine Learning & SHAP Explainability
+scikit-learn>=1.5.0
+xgboost>=2.1.0
+shap>=0.46.0
+
+# Interactive Dashboard & Charts
+streamlit>=1.39.0
+plotly>=5.24.0
+
+# Optional PostgreSQL 16 Warehouse Loader (only needed when DB_BACKEND=postgres/both)
+psycopg2-binary>=2.9.10
+
+# Automated Testing
+pytest>=8.3.0

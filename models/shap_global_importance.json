@@ -1,0 +1,1019 @@
+{
+  "generated_at_utc": "2026-11-10T11:56:06+00:00",
+  "model_name": "XGBoost",
+  "explainer_type": "TreeExplainer",
+  "sample_size": 2000,
+  "base_value": 0.0336,
+  "domain_feature_importance": [
+    {
+      "feature": "Promotion Gap (Years)",
+      "mean_abs_shap": 0.33802
+    },
+    {
+      "feature": "Annualized Overtime Hours",
+      "mean_abs_shap": 0.28125
+    },
+    {
+      "feature": "Salary Growth (%)",
+      "mean_abs_shap": 0.27959
+    },
+    {
+      "feature": "Company Tenure (Years)",
+      "mean_abs_shap": 0.27399
+    },
+    {
+      "feature": "Department",
+      "mean_abs_shap": 0.18168
+    },
+    {
+      "feature": "Performance Rating (1-5)",
+      "mean_abs_shap": 0.18006
+    },
+    {
+      "feature": "Total Experience (Years)",
+      "mean_abs_shap": 0.13318
+    },
+    {
+      "feature": "Training Hours",
+      "mean_abs_shap": 0.1096
+    },
+    {
+      "feature": "Manager Rating (1-5)",
+      "mean_abs_shap": 0.10942
+    },
+    {
+      "feature": "Promotion Count",
+      "mean_abs_shap": 0.10802
+    },
+    {
+      "feature": "Annualized Unpaid Leave",
+      "mean_abs_shap": 0.10711
+    },
+    {
+      "feature": "Annualized Sick Leave",
+      "mean_abs_shap": 0.10074
+    },
+    {
+      "feature": "Age (Years)",
+      "mean_abs_shap": 0.08541
+    },
+    {
+      "feature": "Annual Increment (INR)",
+      "mean_abs_shap": 0.05874
+    },
+    {
+      "feature": "Annualized Leave Days",
+      "mean_abs_shap": 0.05193
+    },
+    {
+      "feature": "Allowances (INR)",
+      "mean_abs_shap": 0.0474
+    },
+    {
+      "feature": "Annual Bonus (INR)",
+      "mean_abs_shap": 0.0324
+    },
+    {
+      "feature": "Education",
+      "mean_abs_shap": 0.02925
+    },
+    {
+      "feature": "Bonus-to-Basic Ratio",
+      "mean_abs_shap": 0.02351
+    },
+    {
+      "feature": "Total Compensation (INR)",
+      "mean_abs_shap": 0.01988
+    },
+    {
+      "feature": "Designation",
+      "mean_abs_shap": 0.0184
+    },
+    {
+      "feature": "Basic Salary (INR)",
+      "mean_abs_shap": 0.01653
+    },
+    {
+      "feature": "Location",
+      "mean_abs_shap": 0.01651
+    },
+    {
+      "feature": "Employment Type",
+      "mean_abs_shap": 0.0112
+    }
+  ],
+  "top_encoded_features": [
+    {
+      "encoded_feature": "Promotion Gap (Years)",
+      "mean_abs_shap": 0.33802,
+      "mean_signed_shap": -0.0812
+    },
+    {
+      "encoded_feature": "Annualized Overtime Hours",
+      "mean_abs_shap": 0.28125,
+      "mean_signed_shap": -0.05739
+    },
+    {
+      "encoded_feature": "Salary Growth (%)",
+      "mean_abs_shap": 0.27959,
+      "mean_signed_shap": -0.09258
+    },
+    {
+      "encoded_feature": "Company Tenure (Years)",
+      "mean_abs_shap": 0.27399,
+      "mean_signed_shap": -0.0215
+    },
+    {
+      "encoded_feature": "Performance Rating (1-5)",
+      "mean_abs_shap": 0.18006,
+      "mean_signed_shap": -0.03214
+    },
+    {
+      "encoded_feature": "Department: Engineering",
+      "mean_abs_shap": 0.13454,
+      "mean_signed_shap": -0.00106
+    },
+    {
+      "encoded_feature": "Total Experience (Years)",
+      "mean_abs_shap": 0.13318,
+      "mean_signed_shap": -0.02605
+    },
+    {
+      "encoded_feature": "Training Hours",
+      "mean_abs_shap": 0.1096,
+      "mean_signed_shap": -0.01989
+    },
+    {
+      "encoded_feature": "Manager Rating (1-5)",
+      "mean_abs_shap": 0.10942,
+      "mean_signed_shap": -0.01466
+    },
+    {
+      "encoded_feature": "Promotion Count",
+      "mean_abs_shap": 0.10802,
+      "mean_signed_shap": 0.01206
+    },
+    {
+      "encoded_feature": "Annualized Unpaid Leave",
+      "mean_abs_shap": 0.10711,
+      "mean_signed_shap": -0.0391
+    },
+    {
+      "encoded_feature": "Annualized Sick Leave",
+      "mean_abs_shap": 0.10074,
+      "mean_signed_shap": -0.03356
+    },
+    {
+      "encoded_feature": "Age (Years)",
+      "mean_abs_shap": 0.08541,
+      "mean_signed_shap": -0.02259
+    },
+    {
+      "encoded_feature": "Annual Increment (INR)",
+      "mean_abs_shap": 0.05874,
+      "mean_signed_shap": -0.01576
+    },
+    {
+      "encoded_feature": "Annualized Leave Days",
+      "mean_abs_shap": 0.05193,
+      "mean_signed_shap": -0.01469
+    },
+    {
+      "encoded_feature": "Department: Finance",
+      "mean_abs_shap": 0.04862,
+      "mean_signed_shap": -0.00859
+    },
+    {
+      "encoded_feature": "Allowances (INR)",
+      "mean_abs_shap": 0.0474,
+      "mean_signed_shap": -0.01433
+    },
+    {
+      "encoded_feature": "Annual Bonus (INR)",
+      "mean_abs_shap": 0.0324,
+      "mean_signed_shap": -0.00845
+    },
+    {
+      "encoded_feature": "Department: Human Resources",
+      "mean_abs_shap": 0.02704,
+      "mean_signed_shap": -0.00494
+    },
+    {
+      "encoded_feature": "Bonus-to-Basic Ratio",
+      "mean_abs_shap": 0.02351,
+      "mean_signed_shap": -0.00803
+    }
+  ],
+  "sample_individual_explanations": [
+    {
+      "attrition_probability": 0.9886,
+      "risk_tier": "HIGH",
+      "decision_threshold": 0.51,
+      "base_value": 0.0336,
+      "explainer_type": "TreeExplainer",
+      "top_factors": [
+        {
+          "feature": "Annualized Overtime Hours",
+          "feature_col": "annualized_overtime_hours",
+          "value": "469.40",
+          "shap_contribution": 1.3775,
+          "abs_contribution": 1.3775,
+          "direction": "Increases Risk"
+        },
+        {
+          "feature": "Promotion Count",
+          "feature_col": "promotion_count",
+          "value": "4.00",
+          "shap_contribution": 0.9228,
+          "abs_contribution": 0.9228,
+          "direction": "Increases Risk"
+        },
+        {
+          "feature": "Annualized Unpaid Leave",
+          "feature_col": "annualized_unpaid_leave",
+          "value": "2.00",
+          "shap_contribution": 0.7182,
+          "abs_contribution": 0.7182,
+          "direction": "Increases Risk"
+        },
+        {
+          "feature": "Salary Growth (%)",
+          "feature_col": "salary_growth_pct",
+          "value": "0.75",
+          "shap_contribution": 0.5442,
+          "abs_contribution": 0.5442,
+          "direction": "Increases Risk"
+        },
+        {
+          "feature": "Annualized Sick Leave",
+          "feature_col": "annualized_sick_leave",
+          "value": "7.00",
+          "shap_contribution": 0.5168,
+          "abs_contribution": 0.5168,
+          "direction": "Increases Risk"
+        },
+        {
+          "feature": "Promotion Gap (Years)",
+          "feature_col": "promotion_gap",
+          "value": "4.05",
+          "shap_contribution": 0.3849,
+          "abs_contribution": 0.3849,
+          "direction": "Increases Risk"
+        },
+        {
+          "feature": "Total Experience (Years)",
+          "feature_col": "experience_years",
+          "value": "14.90",
+          "shap_contribution": 0.2026,
+          "abs_contribution": 0.2026,
+          "direction": "Increases Risk"
+        },
+        {
+          "feature": "Department",
+          "feature_col": "department_name",
+          "value": "Engineering",
+          "shap_contribution": 0.1783,
+          "abs_contribution": 0.1783,
+          "direction": "Increases Risk"
+        }
+      ],
+      "all_factors": [
+        {
+          "feature": "Annualized Overtime Hours",
+          "feature_col": "annualized_overtime_hours",
+          "value": "469.40",
+          "shap_contribution": 1.3775,
+          "abs_contribution": 1.3775,
+          "direction": "Increases Risk"
+        },
+        {
+          "feature": "Promotion Count",
+          "feature_col": "promotion_count",
+          "value": "4.00",
+          "shap_contribution": 0.9228,
+          "abs_contribution": 0.9228,
+          "direction": "Increases Risk"
+        },
+        {
+          "feature": "Annualized Unpaid Leave",
+          "feature_col": "annualized_unpaid_leave",
+          "value": "2.00",
+          "shap_contribution": 0.7182,
+          "abs_contribution": 0.7182,
+          "direction": "Increases Risk"
+        },
+        {
+          "feature": "Salary Growth (%)",
+          "feature_col": "salary_growth_pct",
+          "value": "0.75",
+          "shap_contribution": 0.5442,
+          "abs_contribution": 0.5442,
+          "direction": "Increases Risk"
+        },
+        {
+          "feature": "Annualized Sick Leave",
+          "feature_col": "annualized_sick_leave",
+          "value": "7.00",
+          "shap_contribution": 0.5168,
+          "abs_contribution": 0.5168,
+          "direction": "Increases Risk"
+        },
+        {
+          "feature": "Promotion Gap (Years)",
+          "feature_col": "promotion_gap",
+          "value": "4.05",
+          "shap_contribution": 0.3849,
+          "abs_contribution": 0.3849,
+          "direction": "Increases Risk"
+        },
+        {
+          "feature": "Total Experience (Years)",
+          "feature_col": "experience_years",
+          "value": "14.90",
+          "shap_contribution": 0.2026,
+          "abs_contribution": 0.2026,
+          "direction": "Increases Risk"
+        },
+        {
+          "feature": "Department",
+          "feature_col": "department_name",
+          "value": "Engineering",
+          "shap_contribution": 0.1783,
+          "abs_contribution": 0.1783,
+          "direction": "Increases Risk"
+        },
+        {
+          "feature": "Performance Rating (1-5)",
+          "feature_col": "performance_rating",
+          "value": "3.00",
+          "shap_contribution": -0.0986,
+          "abs_contribution": 0.0986,
+          "direction": "Reduces Risk"
+        },
+        {
+          "feature": "Company Tenure (Years)",
+          "feature_col": "tenure_years",
+          "value": "4.27",
+          "shap_contribution": -0.0911,
+          "abs_contribution": 0.0911,
+          "direction": "Reduces Risk"
+        },
+        {
+          "feature": "Age (Years)",
+          "feature_col": "age_years",
+          "value": "43.60",
+          "shap_contribution": -0.0825,
+          "abs_contribution": 0.0825,
+          "direction": "Reduces Risk"
+        },
+        {
+          "feature": "Designation",
+          "feature_col": "designation",
+          "value": "Manager",
+          "shap_contribution": -0.0531,
+          "abs_contribution": 0.0531,
+          "direction": "Reduces Risk"
+        },
+        {
+          "feature": "Manager Rating (1-5)",
+          "feature_col": "manager_rating",
+          "value": "3.00",
+          "shap_contribution": -0.0445,
+          "abs_contribution": 0.0445,
+          "direction": "Reduces Risk"
+        },
+        {
+          "feature": "Annual Increment (INR)",
+          "feature_col": "salary_increment",
+          "value": "28,100",
+          "shap_contribution": 0.0434,
+          "abs_contribution": 0.0434,
+          "direction": "Increases Risk"
+        },
+        {
+          "feature": "Total Compensation (INR)",
+          "feature_col": "total_compensation",
+          "value": "4,104,900",
+          "shap_contribution": -0.0368,
+          "abs_contribution": 0.0368,
+          "direction": "Reduces Risk"
+        },
+        {
+          "feature": "Bonus-to-Basic Ratio",
+          "feature_col": "bonus_to_salary_ratio",
+          "value": "0.11",
+          "shap_contribution": -0.0292,
+          "abs_contribution": 0.0292,
+          "direction": "Reduces Risk"
+        },
+        {
+          "feature": "Allowances (INR)",
+          "feature_col": "allowances",
+          "value": "1,013,300",
+          "shap_contribution": 0.0219,
+          "abs_contribution": 0.0219,
+          "direction": "Increases Risk"
+        },
+        {
+          "feature": "Basic Salary (INR)",
+          "feature_col": "basic_salary",
+          "value": "2,773,100",
+          "shap_contribution": -0.0152,
+          "abs_contribution": 0.0152,
+          "direction": "Reduces Risk"
+        },
+        {
+          "feature": "Annual Bonus (INR)",
+          "feature_col": "bonus",
+          "value": "318,500",
+          "shap_contribution": -0.0124,
+          "abs_contribution": 0.0124,
+          "direction": "Reduces Risk"
+        },
+        {
+          "feature": "Annualized Leave Days",
+          "feature_col": "annualized_leave_days",
+          "value": "18.00",
+          "shap_contribution": -0.0109,
+          "abs_contribution": 0.0109,
+          "direction": "Reduces Risk"
+        },
+        {
+          "feature": "Training Hours",
+          "feature_col": "training_hours",
+          "value": "34.50",
+          "shap_contribution": -0.0096,
+          "abs_contribution": 0.0096,
+          "direction": "Reduces Risk"
+        },
+        {
+          "feature": "Education",
+          "feature_col": "education",
+          "value": "M.Tech",
+          "shap_contribution": -0.0096,
+          "abs_contribution": 0.0096,
+          "direction": "Reduces Risk"
+        },
+        {
+          "feature": "Employment Type",
+          "feature_col": "employment_type",
+          "value": "Full-Time",
+          "shap_contribution": 0.0051,
+          "abs_contribution": 0.0051,
+          "direction": "Increases Risk"
+        },
+        {
+          "feature": "Location",
+          "feature_col": "location",
+          "value": "Bengaluru",
+          "shap_contribution": 0.004,
+          "abs_contribution": 0.004,
+          "direction": "Increases Risk"
+        }
+      ],
+      "employee_id": "EMP05045",
+      "department_name": "Engineering",
+      "designation": "Manager"
+    },
+    {
+      "attrition_probability": 0.5005,
+      "risk_tier": "LOW",
+      "decision_threshold": 0.51,
+      "base_value": 0.0336,
+      "explainer_type": "TreeExplainer",
+      "top_factors": [
+        {
+          "feature": "Promotion Gap (Years)",
+          "feature_col": "promotion_gap",
+          "value": "4.28",
+          "shap_contribution": 0.5439,
+          "abs_contribution": 0.5439,
+          "direction": "Increases Risk"
+        },
+        {
+          "feature": "Department",
+          "feature_col": "department_name",
+          "value": "Engineering",
+          "shap_contribution": 0.2745,
+          "abs_contribution": 0.2745,
+          "direction": "Increases Risk"
+        },
+        {
+          "feature": "Salary Growth (%)",
+          "feature_col": "salary_growth_pct",
+          "value": "11.44",
+          "shap_contribution": -0.2354,
+          "abs_contribution": 0.2354,
+          "direction": "Reduces Risk"
+        },
+        {
+          "feature": "Total Experience (Years)",
+          "feature_col": "experience_years",
+          "value": "21.80",
+          "shap_contribution": 0.2281,
+          "abs_contribution": 0.2281,
+          "direction": "Increases Risk"
+        },
+        {
+          "feature": "Education",
+          "feature_col": "education",
+          "value": "M.Sc",
+          "shap_contribution": 0.2207,
+          "abs_contribution": 0.2207,
+          "direction": "Increases Risk"
+        },
+        {
+          "feature": "Annualized Sick Leave",
+          "feature_col": "annualized_sick_leave",
+          "value": "2.70",
+          "shap_contribution": -0.2072,
+          "abs_contribution": 0.2072,
+          "direction": "Reduces Risk"
+        },
+        {
+          "feature": "Annual Bonus (INR)",
+          "feature_col": "bonus",
+          "value": "1,355,500",
+          "shap_contribution": -0.1981,
+          "abs_contribution": 0.1981,
+          "direction": "Reduces Risk"
+        },
+        {
+          "feature": "Annualized Overtime Hours",
+          "feature_col": "annualized_overtime_hours",
+          "value": "67.20",
+          "shap_contribution": -0.174,
+          "abs_contribution": 0.174,
+          "direction": "Reduces Risk"
+        }
+      ],
+      "all_factors": [
+        {
+          "feature": "Promotion Gap (Years)",
+          "feature_col": "promotion_gap",
+          "value": "4.28",
+          "shap_contribution": 0.5439,
+          "abs_contribution": 0.5439,
+          "direction": "Increases Risk"
+        },
+        {
+          "feature": "Department",
+          "feature_col": "department_name",
+          "value": "Engineering",
+          "shap_contribution": 0.2745,
+          "abs_contribution": 0.2745,
+          "direction": "Increases Risk"
+        },
+        {
+          "feature": "Salary Growth (%)",
+          "feature_col": "salary_growth_pct",
+          "value": "11.44",
+          "shap_contribution": -0.2354,
+          "abs_contribution": 0.2354,
+          "direction": "Reduces Risk"
+        },
+        {
+          "feature": "Total Experience (Years)",
+          "feature_col": "experience_years",
+          "value": "21.80",
+          "shap_contribution": 0.2281,
+          "abs_contribution": 0.2281,
+          "direction": "Increases Risk"
+        },
+        {
+          "feature": "Education",
+          "feature_col": "education",
+          "value": "M.Sc",
+          "shap_contribution": 0.2207,
+          "abs_contribution": 0.2207,
+          "direction": "Increases Risk"
+        },
+        {
+          "feature": "Annualized Sick Leave",
+          "feature_col": "annualized_sick_leave",
+          "value": "2.70",
+          "shap_contribution": -0.2072,
+          "abs_contribution": 0.2072,
+          "direction": "Reduces Risk"
+        },
+        {
+          "feature": "Annual Bonus (INR)",
+          "feature_col": "bonus",
+          "value": "1,355,500",
+          "shap_contribution": -0.1981,
+          "abs_contribution": 0.1981,
+          "direction": "Reduces Risk"
+        },
+        {
+          "feature": "Annualized Overtime Hours",
+          "feature_col": "annualized_overtime_hours",
+          "value": "67.20",
+          "shap_contribution": -0.174,
+          "abs_contribution": 0.174,
+          "direction": "Reduces Risk"
+        },
+        {
+          "feature": "Annualized Unpaid Leave",
+          "feature_col": "annualized_unpaid_leave",
+          "value": "1.30",
+          "shap_contribution": -0.1638,
+          "abs_contribution": 0.1638,
+          "direction": "Reduces Risk"
+        },
+        {
+          "feature": "Performance Rating (1-5)",
+          "feature_col": "performance_rating",
+          "value": "5.00",
+          "shap_contribution": -0.1343,
+          "abs_contribution": 0.1343,
+          "direction": "Reduces Risk"
+        },
+        {
+          "feature": "Company Tenure (Years)",
+          "feature_col": "tenure_years",
+          "value": "4.28",
+          "shap_contribution": -0.1004,
+          "abs_contribution": 0.1004,
+          "direction": "Reduces Risk"
+        },
+        {
+          "feature": "Training Hours",
+          "feature_col": "training_hours",
+          "value": "45.50",
+          "shap_contribution": 0.0672,
+          "abs_contribution": 0.0672,
+          "direction": "Increases Risk"
+        },
+        {
+          "feature": "Manager Rating (1-5)",
+          "feature_col": "manager_rating",
+          "value": "5.00",
+          "shap_contribution": -0.0454,
+          "abs_contribution": 0.0454,
+          "direction": "Reduces Risk"
+        },
+        {
+          "feature": "Total Compensation (INR)",
+          "feature_col": "total_compensation",
+          "value": "9,892,400",
+          "shap_contribution": -0.0411,
+          "abs_contribution": 0.0411,
+          "direction": "Reduces Risk"
+        },
+        {
+          "feature": "Promotion Count",
+          "feature_col": "promotion_count",
+          "value": "0.00",
+          "shap_contribution": -0.0292,
+          "abs_contribution": 0.0292,
+          "direction": "Reduces Risk"
+        },
+        {
+          "feature": "Basic Salary (INR)",
+          "feature_col": "basic_salary",
+          "value": "6,330,000",
+          "shap_contribution": -0.0148,
+          "abs_contribution": 0.0148,
+          "direction": "Reduces Risk"
+        },
+        {
+          "feature": "Designation",
+          "feature_col": "designation",
+          "value": "Director",
+          "shap_contribution": -0.0135,
+          "abs_contribution": 0.0135,
+          "direction": "Reduces Risk"
+        },
+        {
+          "feature": "Bonus-to-Basic Ratio",
+          "feature_col": "bonus_to_salary_ratio",
+          "value": "0.21",
+          "shap_contribution": 0.0092,
+          "abs_contribution": 0.0092,
+          "direction": "Increases Risk"
+        },
+        {
+          "feature": "Annualized Leave Days",
+          "feature_col": "annualized_leave_days",
+          "value": "17.30",
+          "shap_contribution": -0.006,
+          "abs_contribution": 0.006,
+          "direction": "Reduces Risk"
+        },
+        {
+          "feature": "Age (Years)",
+          "feature_col": "age_years",
+          "value": "48.60",
+          "shap_contribution": -0.0053,
+          "abs_contribution": 0.0053,
+          "direction": "Reduces Risk"
+        },
+        {
+          "feature": "Annual Increment (INR)",
+          "feature_col": "salary_increment",
+          "value": "876,600",
+          "shap_contribution": 0.0052,
+          "abs_contribution": 0.0052,
+          "direction": "Increases Risk"
+        },
+        {
+          "feature": "Employment Type",
+          "feature_col": "employment_type",
+          "value": "Full-Time",
+          "shap_contribution": -0.0047,
+          "abs_contribution": 0.0047,
+          "direction": "Reduces Risk"
+        },
+        {
+          "feature": "Location",
+          "feature_col": "location",
+          "value": "Pune",
+          "shap_contribution": -0.0039,
+          "abs_contribution": 0.0039,
+          "direction": "Reduces Risk"
+        },
+        {
+          "feature": "Allowances (INR)",
+          "feature_col": "allowances",
+          "value": "2,206,900",
+          "shap_contribution": -0.0036,
+          "abs_contribution": 0.0036,
+          "direction": "Reduces Risk"
+        }
+      ],
+      "employee_id": "EMP10335",
+      "department_name": "Engineering",
+      "designation": "Director"
+    },
+    {
+      "attrition_probability": 0.0085,
+      "risk_tier": "LOW",
+      "decision_threshold": 0.51,
+      "base_value": 0.0336,
+      "explainer_type": "TreeExplainer",
+      "top_factors": [
+        {
+          "feature": "Allowances (INR)",
+          "feature_col": "allowances",
+          "value": "45,000",
+          "shap_contribution": -1.3023,
+          "abs_contribution": 1.3023,
+          "direction": "Reduces Risk"
+        },
+        {
+          "feature": "Promotion Gap (Years)",
+          "feature_col": "promotion_gap",
+          "value": "0.19",
+          "shap_contribution": -0.9357,
+          "abs_contribution": 0.9357,
+          "direction": "Reduces Risk"
+        },
+        {
+          "feature": "Salary Growth (%)",
+          "feature_col": "salary_growth_pct",
+          "value": "0.00",
+          "shap_contribution": -0.7771,
+          "abs_contribution": 0.7771,
+          "direction": "Reduces Risk"
+        },
+        {
+          "feature": "Total Experience (Years)",
+          "feature_col": "experience_years",
+          "value": "0.20",
+          "shap_contribution": -0.4095,
+          "abs_contribution": 0.4095,
+          "direction": "Reduces Risk"
+        },
+        {
+          "feature": "Annualized Overtime Hours",
+          "feature_col": "annualized_overtime_hours",
+          "value": "12.50",
+          "shap_contribution": -0.2704,
+          "abs_contribution": 0.2704,
+          "direction": "Reduces Risk"
+        },
+        {
+          "feature": "Training Hours",
+          "feature_col": "training_hours",
+          "value": "54.70",
+          "shap_contribution": -0.2534,
+          "abs_contribution": 0.2534,
+          "direction": "Reduces Risk"
+        },
+        {
+          "feature": "Company Tenure (Years)",
+          "feature_col": "tenure_years",
+          "value": "0.19",
+          "shap_contribution": 0.2406,
+          "abs_contribution": 0.2406,
+          "direction": "Increases Risk"
+        },
+        {
+          "feature": "Total Compensation (INR)",
+          "feature_col": "total_compensation",
+          "value": "345,000",
+          "shap_contribution": -0.2067,
+          "abs_contribution": 0.2067,
+          "direction": "Reduces Risk"
+        }
+      ],
+      "all_factors": [
+        {
+          "feature": "Allowances (INR)",
+          "feature_col": "allowances",
+          "value": "45,000",
+          "shap_contribution": -1.3023,
+          "abs_contribution": 1.3023,
+          "direction": "Reduces Risk"
+        },
+        {
+          "feature": "Promotion Gap (Years)",
+          "feature_col": "promotion_gap",
+          "value": "0.19",
+          "shap_contribution": -0.9357,
+          "abs_contribution": 0.9357,
+          "direction": "Reduces Risk"
+        },
+        {
+          "feature": "Salary Growth (%)",
+          "feature_col": "salary_growth_pct",
+          "value": "0.00",
+          "shap_contribution": -0.7771,
+          "abs_contribution": 0.7771,
+          "direction": "Reduces Risk"
+        },
+        {
+          "feature": "Total Experience (Years)",
+          "feature_col": "experience_years",
+          "value": "0.20",
+          "shap_contribution": -0.4095,
+          "abs_contribution": 0.4095,
+          "direction": "Reduces Risk"
+        },
+        {
+          "feature": "Annualized Overtime Hours",
+          "feature_col": "annualized_overtime_hours",
+          "value": "12.50",
+          "shap_contribution": -0.2704,
+          "abs_contribution": 0.2704,
+          "direction": "Reduces Risk"
+        },
+        {
+          "feature": "Training Hours",
+          "feature_col": "training_hours",
+          "value": "54.70",
+          "shap_contribution": -0.2534,
+          "abs_contribution": 0.2534,
+          "direction": "Reduces Risk"
+        },
+        {
+          "feature": "Company Tenure (Years)",
+          "feature_col": "tenure_years",
+          "value": "0.19",
+          "shap_contribution": 0.2406,
+          "abs_contribution": 0.2406,
+          "direction": "Increases Risk"
+        },
+        {
+          "feature": "Total Compensation (INR)",
+          "feature_col": "total_compensation",
+          "value": "345,000",
+          "shap_contribution": -0.2067,
+          "abs_contribution": 0.2067,
+          "direction": "Reduces Risk"
+        },
+        {
+          "feature": "Education",
+          "feature_col": "education",
+          "value": "PhD",
+          "shap_contribution": -0.1956,
+          "abs_contribution": 0.1956,
+          "direction": "Reduces Risk"
+        },
+        {
+          "feature": "Annual Increment (INR)",
+          "feature_col": "salary_increment",
+          "value": "0.00",
+          "shap_contribution": -0.1375,
+          "abs_contribution": 0.1375,
+          "direction": "Reduces Risk"
+        },
+        {
+          "feature": "Annualized Sick Leave",
+          "feature_col": "annualized_sick_leave",
+          "value": "0.00",
+          "shap_contribution": -0.1301,
+          "abs_contribution": 0.1301,
+          "direction": "Reduces Risk"
+        },
+        {
+          "feature": "Performance Rating (1-5)",
+          "feature_col": "performance_rating",
+          "value": "5.00",
+          "shap_contribution": -0.1233,
+          "abs_contribution": 0.1233,
+          "direction": "Reduces Risk"
+        },
+        {
+          "feature": "Annualized Leave Days",
+          "feature_col": "annualized_leave_days",
+          "value": "8.00",
+          "shap_contribution": -0.1174,
+          "abs_contribution": 0.1174,
+          "direction": "Reduces Risk"
+        },
+        {
+          "feature": "Age (Years)",
+          "feature_col": "age_years",
+          "value": "21.10",
+          "shap_contribution": 0.0862,
+          "abs_contribution": 0.0862,
+          "direction": "Increases Risk"
+        },
+        {
+          "feature": "Manager Rating (1-5)",
+          "feature_col": "manager_rating",
+          "value": "5.00",
+          "shap_contribution": -0.0776,
+          "abs_contribution": 0.0776,
+          "direction": "Reduces Risk"
+        },
+        {
+          "feature": "Basic Salary (INR)",
+          "feature_col": "basic_salary",
+          "value": "300,000",
+          "shap_contribution": -0.0735,
+          "abs_contribution": 0.0735,
+          "direction": "Reduces Risk"
+        },
+        {
+          "feature": "Promotion Count",
+          "feature_col": "promotion_count",
+          "value": "0.00",
+          "shap_contribution": -0.058,
+          "abs_contribution": 0.058,
+          "direction": "Reduces Risk"
+        },
+        {
+          "feature": "Bonus-to-Basic Ratio",
+          "feature_col": "bonus_to_salary_ratio",
+          "value": "0.00",
+          "shap_contribution": -0.0287,
+          "abs_contribution": 0.0287,
+          "direction": "Reduces Risk"
+        },
+        {
+          "feature": "Annual Bonus (INR)",
+          "feature_col": "bonus",
+          "value": "0.00",
+          "shap_contribution": 0.019,
+          "abs_contribution": 0.019,
+          "direction": "Increases Risk"
+        },
+        {
+          "feature": "Department",
+          "feature_col": "department_name",
+          "value": "Customer Success",
+          "shap_contribution": -0.018,
+          "abs_contribution": 0.018,
+          "direction": "Reduces Risk"
+        },
+        {
+          "feature": "Location",
+          "feature_col": "location",
+          "value": "Bengaluru",
+          "shap_contribution": -0.0089,
+          "abs_contribution": 0.0089,
+          "direction": "Reduces Risk"
+        },
+        {
+          "feature": "Employment Type",
+          "feature_col": "employment_type",
+          "value": "Intern",
+          "shap_contribution": -0.0082,
+          "abs_contribution": 0.0082,
+          "direction": "Reduces Risk"
+        },
+        {
+          "feature": "Designation",
+          "feature_col": "designation",
+          "value": "Analyst",
+          "shap_contribution": -0.0069,
+          "abs_contribution": 0.0069,
+          "direction": "Reduces Risk"
+        },
+        {
+          "feature": "Annualized Unpaid Leave",
+          "feature_col": "annualized_unpaid_leave",
+          "value": "1.30",
+          "shap_contribution": -0.0003,
+          "abs_contribution": 0.0003,
+          "direction": "Reduces Risk"
+        }
+      ],
+      "employee_id": "EMP24838",
+      "department_name": "Customer Success",
+      "designation": "Analyst"
+    }
+  ]
+}

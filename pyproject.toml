@@ -1,0 +1,10 @@
+[project]
+name = "workforce-compensation-analytics"
+version = "0.1.0"
+description = "End-to-end Workforce & Compensation Analytics Engine: Data Quality, ETL, Dimensional Warehouse, SQL Analytics, ML Attrition & SHAP, Scenario Simulator."
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+
